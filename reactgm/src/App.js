@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styles from "./App.module.css";
 
 const gm = window.gm;
+const ngi = window.ngi;
 
 class App extends Component {
   state = {
@@ -11,7 +12,7 @@ class App extends Component {
   componentDidMount() {
     const vin = gm.info.getVIN();
     this.setState({ vin });
-    console.log(vin)
+    console.log(vin);
   }
 
   handleClose = () => {
