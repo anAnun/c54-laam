@@ -3,6 +3,7 @@ import Categories from "./Categories";
 import TouristModeHome from "./TouristModeHome.js";
 import Home from "./Home";
 import { Route, withRouter } from "react-router-dom";
+import Details from "./Details";
 import "./grid.css";
 
 const gm = window.gm;
@@ -27,6 +28,7 @@ class App extends Component {
         <Route exact path="/" component={Home} />
         <Route exact path="/tourist-mode-home" component={TouristModeHome} />
         <Route exact path="/categories" component={Categories} />
+        <Route exact path="/details" component={Details} />
       </React.Fragment>
     );
   }

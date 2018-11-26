@@ -9,12 +9,23 @@ class TouristModeHome extends React.Component {
   categories = () => {
     this.props.history.push("/categories");
   };
+
+  details = () => {
+    this.props.history.push("/details");
+  };
+
   render() {
     return (
       <React.Fragment>
         <button className={styles.button} onClick={() => this.categories()}>
           CATEGORIES
         </button>
+
+        <button
+          className={styles.button} onClick={() => this.details()}>
+          details
+        </button>
+
         <button className={styles.back} onClick={() => this.back()}>
           BACK
         </button>
