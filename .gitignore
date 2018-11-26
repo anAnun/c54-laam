@@ -261,3 +261,9 @@ __pycache__/
 *.pyc.vscode/
 .vscode/
 yarn.lock
+src/asset-manifest.json
+src/index.html
+src/service-worker.js
+src/static
+reactgm/build/
+src/precache-*
