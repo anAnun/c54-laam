@@ -3,7 +3,7 @@ import Categories from "./Categories";
 import TouristModeHome from "./TouristModeHome.js";
 import Home from "./Home";
 import { Route, withRouter } from "react-router-dom";
-import "./grid.css";
+import styles from "./App.module.css";
 
 const gm = window.gm;
 
@@ -24,6 +24,8 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
+        <button onClick={() => this.handleClose()} />
+        <div className={styles.margin} />
         <Route exact path="/" component={Home} />
         <Route exact path="/tourist-mode-home" component={TouristModeHome} />
         <Route exact path="/categories" component={Categories} />
