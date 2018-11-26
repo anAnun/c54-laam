@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Categories from "./Categories";
 import { Route, withRouter } from "react-router-dom";
+import "./grid.css";
+import DisplayPlaces from "./DisplayPlaces.js";
 import styles from "./App.module.css";
 
 const gm = window.gm;
@@ -25,6 +27,7 @@ class App extends Component {
         <button onClick={() => this.handleClose()} />
         <div className={styles.margin} />
         <Route exact path="/categories" component={Categories} />
+        <Route exact path="/museums" component={DisplayPlaces} />
       </React.Fragment>
     );
   }
