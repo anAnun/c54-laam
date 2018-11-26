@@ -1,10 +1,12 @@
 import React from "react";
 import catStyles from "./Categories.module.css";
+import { Link } from "react-router-dom";
 
 class Categories extends React.Component {
   back = () => {
     this.props.history.push("/tourist-mode-home");
   };
+
   render() {
     return (
       <React.Fragment>
@@ -12,7 +14,7 @@ class Categories extends React.Component {
         <button className={catStyles.button}>NIGHT LIFE</button>
         <button className={catStyles.button}>MUSEUMS</button>
         <button className={catStyles.button}>RESTAURANTS</button>
-        <button className={catStyles.button}>TOURIST ATTRACTIONS</button>
+        <Link to="/museums">MUSEUMS</Link>
         <button className={catStyles.close} onClick={() => this.back()}>
           back
         </button>
