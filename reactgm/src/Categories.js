@@ -14,7 +14,9 @@ class Categories extends React.Component {
         <button className={catStyles.button}>NIGHT LIFE</button>
         <button className={catStyles.button}>MUSEUMS</button>
         <button className={catStyles.button}>RESTAURANTS</button>
-        <Link to="/museums">MUSEUMS</Link>
+        <Link className={catStyles.button} to="/museums">
+          MUSEUMS
+        </Link>
         <button className={catStyles.close} onClick={() => this.back()}>
           back
         </button>
