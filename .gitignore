@@ -260,4 +260,6 @@ paket-files/
 __pycache__/
 *.pyc.vscode/
 .vscode/
-yarn.lock
+yarn.locksrc/asset-manifest.json
+src/index.html
+src/service-worker.js
