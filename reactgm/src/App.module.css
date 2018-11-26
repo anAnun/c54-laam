@@ -3,3 +3,16 @@
     font-size: 2em;
     color: white;
 }
+
+.button {
+    font-size: 20px;
+    background-color: rgb(202, 189, 189);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.text {
+    font-size: 2em;
+    color: white;
+}
+  

@@ -1,18 +1,21 @@
 import React, { Component } from "react";
 import styles from "./App.module.css";
+import Categories from "./Categories";
+import { Route, withRouter } from "react-router-dom";
 
 const gm = window.gm;
 
 class App extends Component {
   state = {
-    vin: "pending..."
+    vin: "pending...",
+    data: gm.info
   };
 
-  componentDidMount() {
-    const vin = gm.info.getVIN();
-    this.setState({ vin });
-    console.log(vin)
-  }
+  componentDidMount() {}
+
+  goCategories = () => {
+    this.props.history.push("/categories");
+  };
 
   handleClose = () => {
     gm.system.closeApp();
@@ -20,12 +23,15 @@ class App extends Component {
 
   render() {
     return (
-      <div className={styles.root}>
-        <div>VIN: {this.state.vin}</div>
-        <button onClick={this.handleClose}>Close</button>
-      </div>
+      <React.Fragment>
+        <button onClick={() => this.goCategories()} className={styles.button}>
+          hello
+        </button>
+
+        <Route exact path="/categories" component={Categories} />
+      </React.Fragment>
     );
   }
 }
 
-export default App;
+export default withRouter(App);
