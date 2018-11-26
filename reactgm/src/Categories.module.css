@@ -4,9 +4,9 @@
 }
 
 .button {
+    margin-top: 10%;
     font-size: 20px;
     background-color: rgb(202, 189, 189);
     border-radius: 5px;
     padding: 10px; 
 }
-
