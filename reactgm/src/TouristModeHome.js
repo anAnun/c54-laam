@@ -23,7 +23,7 @@ class TouristModeHome extends React.Component {
 
         <button
           className={styles.button} onClick={() => this.details()}>
-          details
+          DETAILS
         </button>
 
         <button className={styles.back} onClick={() => this.back()}>
