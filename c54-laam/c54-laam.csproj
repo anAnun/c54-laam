@@ -90,10 +90,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\MerchantLocator.cs" />
-    <Compile Include="Services\MerchantSearch.cs" />
     <Compile Include="Services\VisaAPIClient.cs" />
-    <Compile Include="Services\VisaController.cs" />
+    <Compile Include="Services\ForeignExchangeRatesTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
