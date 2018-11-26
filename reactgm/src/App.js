@@ -3,8 +3,14 @@ import Categories from "./Categories";
 import TouristModeHome from "./TouristModeHome.js";
 import Home from "./Home";
 import { Route, withRouter } from "react-router-dom";
+<<<<<<< HEAD
 import Details from "./Details";
 import "./grid.css";
+=======
+import "./grid.css";
+import DisplayPlaces from "./DisplayPlaces.js";
+import styles from "./App.module.css";
+>>>>>>> f2af145adc4dd3cbe4eb76196bca82d22b3af3af
 
 const gm = window.gm;
 
