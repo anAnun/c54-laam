@@ -3,7 +3,7 @@ import catStyles from "./Categories.module.css";
 
 class Categories extends React.Component {
   back = () => {
-    this.props.history.push("/");
+    this.props.history.push("/tourist-mode-home");
   };
   render() {
     return (

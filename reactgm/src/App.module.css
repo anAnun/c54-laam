@@ -27,9 +27,10 @@
     color: white;
 }
   
-.tourist-mode-button {
+.touristmodebutton {
     font-size: 3em;
     color: white;
     background-color: rgb(58, 58, 204);
     border-radius: 30px;
+    margin: 20% auto 0 auto;
 }

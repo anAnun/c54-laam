@@ -10,7 +10,7 @@ class Home extends React.Component {
     return (
       <React.Fragment>
         <button
-          className={styles.tourist - mode - button}
+          className={styles.touristmodebutton}
           onClick={() => this.touristMode()}
         >
           TOURIST MODE

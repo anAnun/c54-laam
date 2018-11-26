@@ -3,7 +3,7 @@ import styles from "./App.module.css";
 
 class TouristModeHome extends React.Component {
   back = () => {
-    this.props.history.push("/home");
+    this.props.history.push("/");
   };
 
   categories = () => {

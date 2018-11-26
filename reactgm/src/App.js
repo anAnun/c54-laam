@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import styles from "./App.module.css";
 import Categories from "./Categories";
+import TouristModeHome from "./TouristModeHome.js";
 import Home from "./Home";
 import { Route, withRouter } from "react-router-dom";
 import "./grid.css";
@@ -13,7 +13,9 @@ class App extends Component {
     data: gm.info
   };
 
-  componentDidMount() {}
+  componentDidMount() {
+    this.props.history.push("/");
+  }
 
   handleClose = () => {
     gm.system.closeApp();
