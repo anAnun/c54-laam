@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import styles from "./App.module.css";
 import Categories from "./Categories";
+import Home from "./Home";
 import { Route, withRouter } from "react-router-dom";
+import "./grid.css";
 
 const gm = window.gm;
 
@@ -13,10 +15,6 @@ class App extends Component {
 
   componentDidMount() {}
 
-  goCategories = () => {
-    this.props.history.push("/categories");
-  };
-
   handleClose = () => {
     gm.system.closeApp();
   };
@@ -24,10 +22,8 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <button onClick={() => this.goCategories()} className={styles.button}>
-          hello
-        </button>
-
+        <Route exact path="/" component={Home} />
+        <Route exact path="/tourist-mode-home" component={TouristModeHome} />
         <Route exact path="/categories" component={Categories} />
       </React.Fragment>
     );
