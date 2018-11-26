@@ -1,17 +1,20 @@
 import React, { Component } from "react";
-import styles from "./App.module.css";
+import Categories from "./Categories";
+import TouristModeHome from "./TouristModeHome.js";
+import Home from "./Home";
+import { Route, withRouter } from "react-router-dom";
+import "./grid.css";
 
 const gm = window.gm;
 
 class App extends Component {
   state = {
-    vin: "pending..."
+    vin: "pending...",
+    data: gm.info
   };
 
   componentDidMount() {
-    const vin = gm.info.getVIN();
-    this.setState({ vin });
-    console.log(vin)
+    this.props.history.push("/");
   }
 
   handleClose = () => {
@@ -20,12 +23,13 @@ class App extends Component {
 
   render() {
     return (
-      <div className={styles.root}>
-        <div>VIN: {this.state.vin}</div>
-        <button onClick={this.handleClose}>Close</button>
-      </div>
+      <React.Fragment>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/tourist-mode-home" component={TouristModeHome} />
+        <Route exact path="/categories" component={Categories} />
+      </React.Fragment>
     );
   }
 }
 
-export default App;
+export default withRouter(App);

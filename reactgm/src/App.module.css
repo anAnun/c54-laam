@@ -3,3 +3,34 @@
     font-size: 2em;
     color: white;
 }
+
+.button {
+    font-size: 20px;
+    background-color: rgb(202, 189, 189);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.close {
+    font-size: 25px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    color: red;
+    margin-top: 0px;
+    float: right;
+    position: fixed;
+}
+
+
+.text {
+    font-size: 2em;
+    color: white;
+}
+  
+.touristmodebutton {
+    font-size: 3em;
+    color: white;
+    background-color: rgb(58, 58, 204);
+    border-radius: 30px;
+    margin: 20% auto 0 auto;
+}
