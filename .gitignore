@@ -275,3 +275,10 @@ src/service-worker.js
 src/static
 reactgm/build/
 src/precache-*
+
+src/asset-manifest.json
+src/index.html
+src/service-worker.js
+src/static
+reactgm/build/
+src/precache-*
