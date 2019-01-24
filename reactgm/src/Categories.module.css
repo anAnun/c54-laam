@@ -4,9 +4,40 @@
 }
 
 .button {
-    margin-top: 10%;
-    font-size: 20px;
+    margin: 5%;
+    width: 150px;
+    height: 150px;
     background-color: rgb(202, 189, 189);
     border-radius: 5px;
     padding: 10px; 
+}
+
+.buttonarrow {
+    padding: 5px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.buttonwrapper {
+    margin: 60px 0 0 30px;
+    border-radius: 5px;
+}
+
+.museums {
+    width: 150px;
+    height: 150px;
+
+}
+
+.nightlife {
+    width: 150px;
+    height: 150px;
+}
+
+.restaurants {
+    width: 150px;
+    height: 150px;
+
 }

@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import Categories from "./Categories";
-import TouristModeHome from "./TouristModeHome.js";
-import Home from "./Home";
 import { Route, withRouter } from "react-router-dom";
 import "./grid.css";
 import DisplayPlaces from "./DisplayPlaces.js";
@@ -16,7 +14,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    this.props.history.push("/");
+    this.props.history.push("/categories");
   }
 
   handleClose = () => {
@@ -28,8 +26,6 @@ class App extends Component {
       <React.Fragment>
         <button onClick={() => this.handleClose()} />
         <div className={styles.margin} />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/tourist-mode-home" component={TouristModeHome} />
         <Route exact path="/categories" component={Categories} />
         <Route exact path="/museums" component={DisplayPlaces} />
       </React.Fragment>
